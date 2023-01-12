@@ -1,0 +1,114 @@
+1]public static void main(String ags[])
+
+public--->access modifier
+static--->keyword
+void----->return type
+main---->methodName
+String ags[]---->Array of string type
+
+
+it is a main and first method in java,without main method we can not execute any program in java.
+
+2.class:
+	class is a templete or blueprint in java.in java everything associated with class.
+       syntax:
+		class className{
+				}
+object:
+	object is instance of the class.
+	object perpose is to create multiple copy of the class.
+	oject is real time.
+	object consists of identity,state and behaviour
+	object is creted using new keyword.
+syntax:
+	ClassName referenceVariable=new ClassName();
+	
+
+3.Jvm:
+	java virtual machine
+	it take the byte code and execute it in many platform
+	it perform some task
+		1.load the byte code
+		2.verify the byte code.
+		3.execute the bye code.
+	many task of javm is provide a run time environment to execute byte code.
+	jvm alone can not perform any task it take the help of jre and set of libraries.
+	jvm is platform independent
+JRE:
+	Java Run Time Engine
+	jre contain jvm and set of libraries
+	jre is minimum require to excecute java program
+	jre provide environment to only excecute java programs on machine.
+	jre is platform dependent 
+Jdk:
+	jdk contains jre and java development tools like complier,docs,debbuger and other tools which required to java development.
+	jdk is a platfrom dependent
+	jdk provide environment to run and execute java program on machine.
+
+4]Constructor
+		constructor is special type of method it have the same name as class name without return type.
+		there 2 type of constructor
+		sytax:
+			ClassName referenceVariable=new ClassName();
+	here ClassName with paranthesis is called constructor
+
+			1.default constructor
+			2.parameter constructor
+  	1.default constructor:constructor which have no parameter
+                       public ClassName()
+		{
+		   //code
+			}
+
+	2.parameterized constructor: constructor which have parameter inside the paranthesis
+			public ClassName(parameters or dataType variableName)
+			{
+			   //code
+				}
+9]Class Loader:
+		class loader which is available in said the JVM in runtime in the program execution process
+		class loader loades the bytecode into the JVM.that byte code is available compile time
+
+5]This Keyword:
+		this keyword is used to eliminate the confusion between the instace variable and parameter
+                        ex: this.manager[i++]=manager;
+                          left side manger is a variable of instance class
+	          right side manager is a parameter of the method.
+7]Method types:	
+		method is block of code or set of statement which  perform some certain functionality
+
+		there are 2 types of method availables in java
+		1.pre-defined method
+		2.user-defined method
+ 
+		1.pre-defined method:->this method are defined by java this are already available in java program 
+		
+
+		2.user-defined method:->this methods are defined by user while writting a program 
+12] we can not use instance variable inside the static method bcz instance variables are accessed by creating object and static is accessed by class name
+
+11]package com.xworksz.examples.test;
+
+public class LengthOfArray {
+	
+	
+	public static void main(String[] args) {
+		int num[]={12,3,2,45,6,7,6};
+		System.out.println(num.length);
+	}
+	
+	
+
+}
+
+3]	public static void main(String a[])
+	{
+		String name="program";
+		char c[]=name.toCharArray();
+		for(int i=c.length-1;i>=0;i--)
+		{
+			
+		System.out.println(c[i]);
+		}
+		
+	}

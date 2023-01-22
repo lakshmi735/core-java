@@ -1,2 +1,0 @@
-class Whirpool extends Fridge{
-}

@@ -1,4 +1,0 @@
-class Phone extends Samsung
-{
-	
-}

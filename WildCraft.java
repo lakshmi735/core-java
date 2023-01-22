@@ -1,2 +1,0 @@
-class WildCraft extends bag{
-}

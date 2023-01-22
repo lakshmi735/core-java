@@ -1,0 +1,2 @@
+class Ultratech extends Cement{
+}

@@ -1,0 +1,3 @@
+class ApolloHospital extends Hospital{
+	
+}

@@ -1,0 +1,2 @@
+class Amul extends IceCream{
+}

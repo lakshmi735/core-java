@@ -1,0 +1,2 @@
+class DairyMilk extends Chocolate{
+}

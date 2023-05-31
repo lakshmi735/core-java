@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="login.css">
+        <script>
+            function login(){
+                console.log("calling login function")
+
+                var email=document.getElementById("email")
+                var password=document.getElementById("password")
+                if(email.value=='')
+                {
+                    console.log("Please Enter Email")
+                    return
+                }
+                if(password.value=='')
+                {
+                    console.log("Please Enter Password")
+                    return
+                }
+                let registerDataString = localStorage.getItem("save")
+                console.log(registerDataString)
+               
+                let registerData = JSON.stringify(registerDataString)
+                console.log(registerData)
+                console.log(registerData.email)
+                console.log(registerData.password)
+
+                let loginMessage=document.getElementById("loginMessage")
+                loginMessage.innerHTML=''
+                
+                if(email.value==registerData.email && password.value==registerData.password){
+                    console.log(" email login success")
+                    loginMessage.innerHTML='Login success'
+                    loginMessage.style.color='green'
+                    window.location.href='home.html'
+                    sessionStorage.setItem("username",registerData,firstName)
+                    console.log(sessionStorage.getItem("username"))
+                }else{
+              
+                    console.log("invalid email or password")
+                    loginMessage.innerHTML="invalid email or password"
+                    loginMessage.style.color='red'
+                }
+
+
+                
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <div class="container">
+        <form>
+        <div class="form-group">
+            <lable>Enter the Email</lable>
+            <input type="email" name="email" id="email" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Enter the Passsword</label>
+            <input type="password" name="password" id="password" class="form-control">
+        </div>
+        <button type="button" onclick="login()">Login</button>
+        <span id="loginMessage"></span>
+        </form>
+        </div>
+    </body>
+</html>

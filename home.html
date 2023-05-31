@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Welcome<span id="username"></span></h1>
+    <button onclick="displayDate()">Click Me!!</button>
+    <span id="dateMessagge"></span>
+    <div id="dynamicElement"></div>
+    <script>
+        let username=sessionStorage.getItem("username")
+        console.log(username)
+        let name=document.getElementById("username")
+        name.innerHTML=username
+        
+        //javascript popup boxes
+        alert("welcome to page")
+        confirm("are you sure you have complete the task")
+        prompt("what is your name")
+        //array
+        //how to create array in javascript
+        //when we declare array we use----->let
+        let arr=[1,2,3]
+        console.log(arr)
+
+        //adding object to array
+        let trees=[]
+        let tree1={
+            "name":"mango",
+            "lifespan":20
+        }
+        trees.push(tree1)
+        console.log(trees)
+        let tree2={
+            "name":"Areca",
+            "lifespan":60
+
+        }
+        trees.push(tree2)
+        for(let i=0;i<trees.length;i++)
+        {
+            console.log(trees[i])
+        }
+        let x=1
+        let y=1
+        console.log(x==y) // to heck value
+        console.log(x===y) // to check datatype and value
+
+        let e=1  //number
+        let f="1" //string
+        console.log(e==f)  
+        console.log(e===f)//----->first it check datatype after value both values datatype is diffrent thats why we get false as output
+        //function
+        function sample(){
+            console.log("calling sample")
+        }
+        sample()
+
+        //function express
+        let result = function add(){
+            console.log("calling add")
+        }
+        console.log(result)
+        console.log(result())
+
+        //ananymous function-
+        //function which doesn't have name
+        let ananymous = function(){
+            console.log("calling ananymous function")
+        }
+        ananymous()
+
+        function displayDate(){
+            console.log("calling display date function")
+            let date=new Date()
+            console.log(date)
+            console.log(date.getFullYear())
+            let dateMessagge=document.getElementById("dateMessagge")
+            dateMessagge.innerHTML=date
+
+        }
+        //how  to create element from javascript
+        let element= document.createElement("p")
+        console.log(element)
+
+        let node=document.createTextNode("Praragraph creating dynamically")
+        console.log(node)
+        element.appendChild(node)
+        console.log(element)
+
+        let dynamicElement = document.getElementById("dynamicElement")
+        dynamicElement.appendChild(element)
+
+        //add image dynamically
+        
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+    
+</body>
+</html>

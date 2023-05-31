@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script>
+            function add(){
+                console.log("calling add function")
+                var num1=document.getElementById("num1")
+                console.log(num1)
+                console.log(num1.value)
+                var num2=document.getElementById("num2")
+                console.log(num2)
+                console.log(num2.value)
+                console.log(num1.value+num2.value)
+                var result=parseInt(num1.value)+parseInt(num2.value)
+                console.log(result)
+                function sub()
+                console.log("calling subtraction method")
+                console.log(num1.value-num2.value)
+                var result=parseInt
+
+
+                //how to send data from javascript to html page
+                var message=document.getElementById("message")
+                //message.innerHTML="Result"
+                message.innerHTML=result
+                message.style.color='red'
+                message.style.textDecoration='underline'
+
+
+            }
+            
+        </script>
+    </head>
+    <body>
+        <form>
+            <div>
+                <label>Enter Number1</label>
+                <input type="text" name="number1" id="num1">
+            </div>
+            <div>
+                <lable>Enter Number2</lable>
+                <input type="text" name="number2" id="num2">
+            </div>
+            <button type="button" onclick="add()">Add</button>
+            <span id="message"></span>
+            <button type="button" onclick="sub()">Sub</button>
+            <span id="message1"></span>
+        </form>
+    </body>
+</html>

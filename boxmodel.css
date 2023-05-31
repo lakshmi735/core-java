@@ -1,0 +1,33 @@
+.csspadding{
+    padding-left: 30px;
+    padding: 10px 20px 15px 10px; 
+    padding-left: 50px;
+    border:2px double red;
+    /*border:2px dotted red;*/
+    margin: 10px 20px 10px 40px;
+    
+    
+
+}
+p{
+    color: aqua;
+}
+/*Descendant selector*/
+div p{
+    color: red;
+}
+/*child selector*/
+div > p{
+    color: yellow;
+}
+/*Adjacent sibling selector*/
+div + p{
+    color: blueviolet;
+}
+/*general sibling  selector*/
+div ~ p{
+    color: brown;
+}
+/* div + p{
+    color: blueviolet;
+}*/

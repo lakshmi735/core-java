@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript</title>
+    <script>
+        //to print statement in JS-javascript
+        console.log("introduction to JavaScript")
+        //semicolon is optional
+         //JavaScript is case sensitive
+        //How to create variables in javascript(keyword,variableName)
+        var a
+        console.log(a)//get output as undefined
+        console.log(typeof(a));//datatype also undefined
+        console.log(b)//--->we get undefined
+        var b=10
+        console.log(b)//output is 10
+        console.log(typeof(b));
+        var b=true
+        console.log(b)//output is true
+        console.log(typeof(b));
+        var b='javascript'
+        console.log(b)//output is javascript
+        //how to check datatype of variable-
+        //using a founcion called typeOf
+        //all Integer are consider as only number in js there is int float etc
+        console.log(typeof(b));
+        var c=40.87
+        console.log(c)
+        console.log(typeof(c));
+        var c='A'
+        console.log(c)
+        //console is object
+        //log is function
+        console.log(typeof(c));
+        //dynamic
+        //to display in html using javascript
+        document.write("We are learning JavaScript")
+        //write is function
+        //document is object
+        document.write("<h1>We are learning JavaScript</h1>")
+        document.write("<h2> We are learning JavaScript</h2>")
+        document.write("<h3> We are learning JavaScript</h3>")
+        document.write("<h4> We are learning JavaScript</h4>")
+        document.write("<h5> We are learning JavaScript</h5>")
+        document.write("<h6> We are learning JavaScript</h6>")
+        //print till h6
+        //datatypein javscript
+        //number-int,float,decimal
+        //String-string,literal,character
+        //boolean-true,false
+        //undefined
+        //How to declare a function in Javascript
+        //keyword functionname(){
+            //}
+            display()//we can cal function before function declaration
+        function display(){
+            console.log("we are creating function")
+            return "value"
+
+        }
+        //calling method name/function name
+        display()
+        console.log(display)
+        console.log(display())//display dont have return type soo...it is undefined in output after adding return type as value then we get value as output
+
+        function add(a,b){//a , b are parameters
+            console.log("calling add function")
+            console.log(a)
+            console.log(b)
+            return a+b
+        }
+        console.log(add(10,20))//10,20 are arguments
+        console.log(add('10','20'))//concatinate 1020
+        function clickMe(){
+            console.log("calling click me")
+        }
+        function doubleclickMe(){
+            console.log("calling double click")
+        }
+        function ananymous(){
+            console.log("calling ananymous function")
+            var first=document.getElementById("firstName")//its calling address 
+            console.log(first)//it print the address or element
+            console.log(first.value)
+
+        }
+        function something(){
+            var last=document.getElementById("lastName")
+            console.log(last)
+            console.log(last.value)
+        }
+        function clickToMe()
+        {
+            console.log("click to me")
+        }
+        function doubleclick(){
+            console.log("again click")
+        }
+        function onMouseOver(){
+            console.log("clicking mouse over")
+
+        }
+        
+
+
+       
+    </script>
+</head>
+<body> <!--click,double click-->
+    <button ondblclick="doubleclickMe()" onclick="clickMe()">Click me</button>  
+    <button ondblclick="doubleclick()" onclick="clickToMe()">ClickToMe</button>
+    
+    <form>
+        <label>Enter the First Name</label>
+        <input type="text" name="firstName" id="firstName">
+        <button type="button" onclick="ananymous()">Click</button> <!--submit is defULT is dont add type=button-->
+        <label>Enter the Last Name</label>
+        <input type="text" name="lastName" id="lastName">
+        <button type="button" onclick="something()">Click</button>
+        <button onmouseover="onMouseOver()">Click</button>
+        
+
+    </form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--webpages 
+    static we page
+    dynamic web page
+    javascript- js
+    client side(front end)scripting langaauge
+    it is used to validation of web pageg
+    perform event handling----whenever we need to perfom any action we need to call function
+    (click,scroll,select,doubleclick,enter
+    keyup,keydown,onchange
+    function varible,
+    where to write to javascript
+    core tags- html,head,title,body
+    css - style,link
+    where to write to javascript-head
+    script
+    <head>
+        <script>
+            print statement in js-javascript
+            console.log("we are  learning javascript")
+        </script>
+    </head>
+
+    file.js
+
+    2 type of error
+    variable not defined ---console.log(b)
+
+    mouse evnt-----onclick
+    ondblclick for double click
+    ---->
